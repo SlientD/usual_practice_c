@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11.3 杨辉三角", "11.3 杨辉三角\11.3 杨辉三角.vcxproj", "{CA1374D7-D4B9-4E1A-94EE-62E7410D1C7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA1374D7-D4B9-4E1A-94EE-62E7410D1C7D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CA1374D7-D4B9-4E1A-94EE-62E7410D1C7D}.Debug|Win32.Build.0 = Debug|Win32
+		{CA1374D7-D4B9-4E1A-94EE-62E7410D1C7D}.Release|Win32.ActiveCfg = Release|Win32
+		{CA1374D7-D4B9-4E1A-94EE-62E7410D1C7D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
