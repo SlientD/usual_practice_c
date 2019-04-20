@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "遍历一遍找两个无重复数", "遍历一遍找两个无重复数\遍历一遍找两个无重复数.vcxproj", "{A815369F-DE30-4896-BC07-DA689F5059B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A815369F-DE30-4896-BC07-DA689F5059B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A815369F-DE30-4896-BC07-DA689F5059B7}.Debug|Win32.Build.0 = Debug|Win32
+		{A815369F-DE30-4896-BC07-DA689F5059B7}.Release|Win32.ActiveCfg = Release|Win32
+		{A815369F-DE30-4896-BC07-DA689F5059B7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+﻿生成启动时间为 2019/3/26 16:22:53。
+     1>项目“D:\bit\hannoi_feidigui\hannoi_feidigui\hannoi_feidigui.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt hannoif.c
+         hannoif.c
+     1>d:\bit\hannoi_feidigui\hannoi_feidigui\hannoif.c(59): warning C4101: “i”: 未引用的局部变量
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\bit\hannoi_feidigui\Debug\hannoi_feidigui.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\bit\hannoi_feidigui\Debug\hannoi_feidigui.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\bit\hannoi_feidigui\Debug\hannoi_feidigui.lib" /MACHINE:X86 Debug\hannoif.obj
+         hannoi_feidigui.vcxproj -> D:\bit\hannoi_feidigui\Debug\hannoi_feidigui.exe
+     1>已完成生成项目“D:\bit\hannoi_feidigui\hannoi_feidigui\hannoi_feidigui.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.69
