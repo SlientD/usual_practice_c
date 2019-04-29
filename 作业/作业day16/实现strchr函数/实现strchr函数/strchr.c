@@ -3,14 +3,14 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
-char* My_Strchr(const char* string, int num)
+const char* My_Strchr(const char* string, int num)
 {
 	assert(string != NULL);
 	for (string; string !=0; string++)
 	{
 		if (*string == num)
 		{
-			return string;
+			return  string;
 		}
 	}
 	return NULL;
