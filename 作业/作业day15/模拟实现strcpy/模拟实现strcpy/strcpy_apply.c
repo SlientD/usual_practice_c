@@ -15,7 +15,7 @@ char *strcpy2(char *strDestination, const char *strSource)
 		strSource++;
 	}
 	*strDestination = '\0';*/
-	while ((*strDestination++ = *strSource++)!=0);
+	while (*strDestination++ = *strSource++);        //œ»∏≥÷µ‘Ÿ≈–∂œ∞°°£°£°£
 	return ret;
 
 }
@@ -36,7 +36,7 @@ char *strcpy2(char *strDestination, const char *strSource)
 int main()
 {
 	char *a = "abcdef";
-	char b[5]="abcde";
+	char b[20]="abcde";
 	strcpy2(b, a);
 	//my_srycyp1(b, a);
 	//strcpy(b,a);

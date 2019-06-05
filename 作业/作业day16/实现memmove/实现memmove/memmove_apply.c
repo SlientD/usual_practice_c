@@ -34,8 +34,8 @@ void *My_Memmove(char* destination,const char* source, int num)
 int main()
 {
 	char a[] = "abcdef";
-	//char b[] = "abcdef";
-	My_Memmove(a+2, a, 3);
+	char b[] = "abcdef";
+	My_Memmove(a, a+2, 3);
 	printf("My_Memmoveºó£º%s\n", a);
 	//memmove(a+2, a, 3);                  
 	//printf("memmoveºó£º%s\n", a);

@@ -7,12 +7,12 @@
 
 int main()
 {
-	int money=40,number=40,count=40,result=0;
+	int money=40,number=40,count=40;
 	while ( number > 1)
 	{
 		count += number / 2;
-		number = number / 2+result;
-		result = number % 2;
+		number = number / 2 + number % 2;
+		
 	}
 	printf("%d\n", count);
 

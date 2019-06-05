@@ -18,7 +18,7 @@ char *strcat2(char *destination,const char *source)
 		source++;
 		destination++;
 	}*/
-	while ((*destination++ = *source++) != 0);        //源中的结束符也要赋进去，因此先赋值判0
+	while (*destination++ = *source++);        //源中的结束符也要赋进去，因此先赋值判0
 	return ret;
 
 
