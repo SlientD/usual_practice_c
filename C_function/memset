@@ -1,0 +1,32 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+	
+	char buffer[] = "This is a test of the memset function";   //MSDN所给出的例子
+	printf("Before: %s\n", buffer);
+	memset(buffer, '*', 4);
+	printf("After:  %s\n", buffer);                            //结果为  **** is a test of the memset function
+  //进一步所给例子
+	int a[2];
+	char b[2];
+  
+	memset(a, 0, 4);                      //所附字节数为4，a为int型，一个空间占4个字节，所以只有第一个空间的四个字节被赋为0，结果a[0]=0
+	printf("%d,%d\n", a[0], a[1]);        //结果为  0 ，-858993460
+  
+	memset(a, 0, 8);      
+	printf("%d,%d\n", a[0], a[1]);        //结果为  0 ，0
+  
+	memset(a, 'a', 8);                      //a数组的8个空间都被赋值为‘a'的asc码值
+                                          //1633771873 =  1100 001| 0110 0001 |0110 0001 |0110 0001   01100001  'a'的asc码值
+	printf("%d,%d\n", a[0], a[1]);          //结果为  1633771873，1633771873
+  
+	memset(b, 'a', sizeof(b));               //b数组为char类型
+	printf("%c,%c\n", b[0], b[1]);          //结果为  a,a
+  
+	system("pause");
+	return 0;
+
+}
