@@ -1,4 +1,4 @@
-﻿生成启动时间为 2019/7/17 15:50:54。
+﻿生成启动时间为 2019/7/18 12:59:07。
      1>项目“D:\git\git\usual_practice_c\work\作业day12\12.4 字符数组中，每个单词的逆序\12.4 字符数组中，每个单词的逆序\12.4 字符数组中，每个单词的逆序.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt word_revers.c
@@ -10,4 +10,4 @@
 
 生成成功。
 
-已用时间 00:00:00.75
+已用时间 00:00:03.41

@@ -74,8 +74,10 @@ int main()
 void reserve(char* string)
 {
 	char* temp = string;
-	char* res = (char *)malloc(strlen(string)+1);
-	memset(res, 0, strlen(res));
+	int len = strlen(string) + 1;
+	char* res = (char *)malloc(len);        
+	//错误写法：memset(res, 0, strlem(res));      res只是分配内存空间了，没有赋值，但是strlen是遇见\0停止，所以strlen会很大。不停的memset
+	memset(res, 0, len);
 	while (temp = strrchr(string, ' '))
 	{
 		strcat(res, temp+1);
@@ -85,8 +87,8 @@ void reserve(char* string)
 	strcat(res, string);
 	strcpy(string, res);
 	free(res);                                     //free报错
-	
 }
+
 int main()
 {
 	char arr[100];
