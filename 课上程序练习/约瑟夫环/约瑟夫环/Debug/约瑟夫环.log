@@ -1,0 +1,104 @@
+﻿生成启动时间为 2019/7/18 17:34:32。
+     1>项目“D:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\约瑟夫环.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Joseph_ring.c func.c
+         func.c
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(12): error C2061: 语法错误: 标识符“SListNode”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(13): error C2059: 语法错误:“}”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(15): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(15): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(15): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(16): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2370: “SListDate”: 重定义；不同的存储类
+                 d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(8) : 参见“SListDate”的声明
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(19): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(19): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(19): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(20): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(20): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(20): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(4): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(4): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(4): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(5): error C2054: 在“pphead”之后应输入“(”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(9): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(11): error C2065: “SListNode”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(11): error C2065: “tmp”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(11): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(12): error C2065: “tmp”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(12): error C2223: “->date”的左侧必须指向结构/联合
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(13): error C2065: “tmp”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(13): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(14): error C2065: “tmp”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(14): warning C4047: “return”:“int *”与“int”的间接级别不同
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(16): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(16): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(16): error C2370: “SListDate”: 重定义；不同的存储类
+                 d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(8) : 参见“SListDate”的声明
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(16): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(16): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(17): error C2054: 在“x”之后应输入“(”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(22): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(22): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(22): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(23): error C2054: 在“pphead”之后应输入“(”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(29): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(29): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(29): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.c(30): error C2054: 在“phead”之后应输入“(”
+         Joseph_ring.c
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(12): error C2061: 语法错误: 标识符“SListNode”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(13): error C2059: 语法错误:“}”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(15): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(15): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(15): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(16): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2370: “SListDate”: 重定义；不同的存储类
+                 d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(8) : 参见“SListDate”的声明
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2146: 语法错误: 缺少“;”(在标识符“x”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(18): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(19): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(19): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(19): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(20): error C2143: 语法错误 : 缺少“)”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(20): error C2143: 语法错误 : 缺少“{”(在“*”的前面)
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\func.h(20): error C2059: 语法错误:“)”
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(6): error C2065: “SListNode”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(6): error C2065: “pfront”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(6): warning C4552: “*”: 运算符不起任何作用；应输入带副作用的运算符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(7): error C2065: “SListNode”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(7): error C2065: “plast”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(7): warning C4552: “*”: 运算符不起任何作用；应输入带副作用的运算符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(8): error C2065: “SListNode”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(8): error C2065: “cur”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(8): warning C4552: “*”: 运算符不起任何作用；应输入带副作用的运算符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(14): warning C4013: “SListInit”未定义；假设外部返回 int
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(14): error C2065: “pfront”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(15): warning C4013: “SListPush”未定义；假设外部返回 int
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(15): error C2065: “pfront”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(16): error C2065: “plast”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(16): error C2065: “pfront”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(19): error C2065: “pfront”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(21): error C2065: “plast”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(21): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(21): error C2065: “pfront”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(22): error C2065: “cur”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(22): error C2065: “plast”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(27): error C2065: “cur”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(27): error C2223: “->next”的左侧必须指向结构/联合
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(29): warning C4013: “SListEraseAfter”未定义；假设外部返回 int
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(29): error C2065: “cur”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(31): error C2065: “cur”: 未声明的标识符
+     1>d:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\joseph_ring.c(31): error C2223: “->date”的左侧必须指向结构/联合
+         正在生成代码...
+     1>已完成生成项目“D:\git\git\usual_practice_c\课上程序练习\约瑟夫环\约瑟夫环\约瑟夫环.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.05
