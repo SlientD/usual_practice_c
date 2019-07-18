@@ -84,7 +84,7 @@ void reserve(char* string)
 	}
 	strcat(res, string);
 	strcpy(string, res);
-	free(res);                            
+	free(res);                                     //free±¨´í
 	
 }
 int main()
