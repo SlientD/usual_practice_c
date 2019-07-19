@@ -4,18 +4,49 @@
 int main()
 {
 	SListNode* head;     //head还是野指针还未赋值，就是一个存放地址的变量，他的指向有date和next
-
+	SListNode* head1;
+	SListNode* start;
+	SListNode* tmp;
 	SListInit(&head);   //给head一个值，使它指向一个结构体
 	SListPushFront(&head, 2);
+	tmp = head;
 	SListPushFront(&head, 3);
 	SListPushFront(&head,4);
-
 	SListPushFront(&head, 5);
 	SListPushFront(&head, 6);
+	SListPushFront(&head, 7);
+	start = head;
+	SListPushFront(&head, 8);
+	//tmp->_next = start;
+	if (exitCycle(head))
+	{
+
+		printf("%d\n", detectCycle(head)->_data);
+	}
+	else{
+		printf("null\n");
+	}
+
+	/*SListInit(&head1);
+	SListPushFront(&head1, 3);*/
+	/*SListPushFront(&head1, 4);
+	SListPushFront(&head1, 5);
+	SListPushFront(&head1, 6);*/
+	//head1->_next = head;
 	
-	
-	printf("原来的：");
-	SListPrint(head);
+	/*printf("原来的head：");
+	SListPrint(head);*/
+	/*printf("原来的head1：");
+	SListPrint(head1);
+	if (SListFindCommenNode(head, head1))
+	{
+		printf("相同节点在哪？：%d\n", SListFindCommenNode(head, head1)->_data);
+	}
+	else{
+		printf("相同节点在哪？null");
+	}*/
+
+
 	/*printf("pop后的：");
 	SListPopFront(&head);
 	SListPrint(head);*/
@@ -40,9 +71,9 @@ int main()
 	SListPrint(head);*/
 
 
-	SListReverse2(&head);
+	/*SListReverse2(&head);
 	printf("逆序2后的：");
-	SListPrint(head);
+	SListPrint(head);*/
 
 
 
