@@ -5,6 +5,12 @@
 #include <stdlib.h>
 
 typedef int SListDate;
+////错误代码：
+//typedef struct SList
+//{
+//	SListDate date;
+//	SListNode* next;       //这里还不能使用重定义的名字，代码从上到下执行，这时还不知道这个名字，还要写全称struct SList
+//}SListNode;
 typedef struct SList
 {
 	SListDate date;

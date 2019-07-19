@@ -17,17 +17,20 @@ int main()
 	{
 		SListPush(&pfront, i);
 	}
-	plast->next = pfront;
-	cur = plast;
+	plast->next = pfront;        //变循环单链表
+	cur = plast;                //保证跳两次删人，所以从-1开始 ，可以画图。当从-1开始时，第一次才满足for (i = 1; i < n; i++)这个for循环
 	for (; m > 1; m--)
 	{
 		for (i = 1; i < n; i++)
 		{
 			cur = cur->next;
+			printf("第%d报数%d\n", cur->date, i);
 		}
+		printf("%d号出\n", cur->next->date);
 		SListEraseAfter(cur);
+		
 	}
-	printf("%d\n", cur->date);
+	printf("存活的人：%d号\n", cur->date);
 
 
 
