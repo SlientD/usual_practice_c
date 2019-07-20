@@ -37,5 +37,8 @@ void ListNodeChange(ListNode* plist1, ListNode* plist2);
 //排序
 void ListSort(List* plist);
 //编写代码，以给定值x为基准将链表分割成两部分，所有小于x的结点排在大于或等于x的结点之前给定一个链表的头指针 ListNode* pHead，请返回重新排列后的链表的头指针。注意：分割以后保持原来的数据顺序不变。
-void ListXClassify(List* plist);
+//void ListXClassify(List* plist);
+ListNode* ListMerge(List* plist1, List* plist2);
+
+
 #endif
