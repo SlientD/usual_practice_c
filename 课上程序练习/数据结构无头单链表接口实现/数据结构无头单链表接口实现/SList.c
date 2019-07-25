@@ -14,6 +14,13 @@ SListNode* BuySListNode(SLTDataType x)           //做一个新的结点
 	tmp->_next = NULL;
 	return tmp;
 }
+void SListPushFront(SListNode** pphead, SLTDataType x)   //头插，头节点的地址要换 ，所以要传存头节点地址变量的地址，才能改变头节点地址的值 
+{
+	SListNode* tmp;
+	tmp = BuySListNode(x);
+	tmp->_next = *pphead;                               //头插结构体的next要指向原来第一个结构体
+	*pphead = tmp;                                       //头节点继续等于第一个元素的地址
+}
 void SListEraseAfter(SListNode* pos)  //删除pos结点后面的节点
 {
 	SListNode* tmp = pos->_next;      //-> 有解引用对应数组的[],取值后改的
@@ -35,13 +42,7 @@ void SListDestory(SListNode** pphead)
 	*pphead = NULL;
 }
 
-void SListPushFront(SListNode** pphead, SLTDataType x)   //头插，头节点的地址要换 ，所以要传存头节点地址变量的地址，才能改变头节点地址的值 
-{
-	SListNode* tmp;
-	tmp = BuySListNode(x);
-	tmp->_next = *pphead;                               //头插结构体的next要指向原来第一个结构体
-	*pphead = tmp;                                       //头节点继续等于第一个元素的地址
-}
+
 void SListPopFront(SListNode**  pphead)
 {
 	if (*pphead == NULL)
@@ -75,7 +76,6 @@ void SListInsertAfter(SListNode* pos, SLTDataType x)
 
 
 }
-// 在pos的前面进行插入
 
 
 void SListRemove(SListNode** pphead, SLTDataType x)   //清除所有值为x的值

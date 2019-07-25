@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "BTree.h"
+#include "queue.h"
 BTNode* BinaryTreeCreate(BTDataType* a, int n)   //只要给的字符串可以传一个树，就不需要n
 {
 	BTNode* cur;
@@ -35,6 +36,64 @@ BTNode* BinaryTreeCreate1(char * a)
 
 
 }
+
+//前序遍历
+void  BinaryPreorderTraversal(BTNode* root)
+{
+	if (root != NULL)
+	{
+		printf("%c", root->_data);
+		BinaryPreorderTraversal(root->_left);
+		BinaryPreorderTraversal(root->_right);
+	}
+	
+}
+//后序遍历
+void  BinaryPostorderTraversal(BTNode* root)
+{
+	if (root != NULL)
+	{
+		BinaryPostorderTraversal(root->_left);
+		BinaryPostorderTraversal(root->_right);
+		printf("%c", root->_data);
+		
+	}
+	
+}
+//中序遍历 
+void  BinaryInorderTraversal(BTNode* root)
+{
+	if (root != NULL)
+	{
+		BinaryInorderTraversal(root->_left);
+		printf("%c", root->_data);
+		BinaryInorderTraversal(root->_right);
+
+	}
+	
+}
+
+void  BinaryLevelorderTraversal(BTNode* root){
+	Queue qu;
+	QueueInit(&qu);
+	QueuePush(&qu,root);
+	//while (qu.front)
+	while (!QueueIsEmpty(&qu))
+	{
+		if (qu.front->data->_left != NULL)
+		{
+			QueuePush(&qu, qu.front->data->_left);
+		}
+		if (qu.front->data->_right!= NULL)
+		{
+			QueuePush(&qu, qu.front->data->_right);
+		}
+		QueuePop(&qu);
+	}
+
+
+}
+
 void BinaryTreeDestory(BTNode** root)
 {
 	if (*root == NULL){

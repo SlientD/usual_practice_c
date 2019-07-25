@@ -12,10 +12,7 @@ typedef struct SListNode
 	SLTDataType _data;
 	struct SListNode* _next;
 }SListNode;
-typedef struct SList
-{
-	SListNode* _head;
-}SList;
+
 void SListInit(SListNode** pphead);
 void SListDestory(SListNode** pphead);
 SListNode* BuySListNode(SLTDataType x);            //做一个新的结点
