@@ -6,10 +6,7 @@ void QueueInit(Queue* pq)
 {
 	pq->front = pq->rear = NULL;
 }
-void QueueDestory(Queue* pq)
-{
-	pq->front = NULL;
-}
+
 void QueuePush(Queue* pq, QuDataType x)
 {
 	QueueNode * cur = (QueueNode *)malloc(sizeof(QueueNode));
@@ -23,16 +20,13 @@ void QueuePush(Queue* pq, QuDataType x)
 	pq->rear->next= cur;
 	pq->rear = cur;
 }
-void QuNodePrint(QueueNode *tmp)
-{
-	printf("%c", tmp->data->_data);
-}
+
 void QueuePop (Queue* pq)
 {
 	QueueNode * tmp ;
 	tmp = pq->front;
 	pq->front = tmp->next;                             //最后是会等于null的 
-	QuNodePrint(tmp);
+	printf("%c", tmp->data->_data);
 	free(tmp);
 
 }
@@ -40,4 +34,8 @@ void QueuePop (Queue* pq)
 int QueueIsEmpty(Queue* pq)
 {
 	return pq->front == NULL;
+}
+void QueueDestory(Queue* pq)
+{
+	pq->front = NULL;
 }
