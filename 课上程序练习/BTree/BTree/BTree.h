@@ -19,6 +19,7 @@ void  BinaryLevelorderTraversal(BTNode* root);
 
 void STBinaryPreorderTraversal(BTNode* root);
 void STBinaryInorderTraversal(BTNode* root);
-void STBinaryPostorderTraversal(BTNode* root);
-
+void STBinaryTreePostOrder(BTNode* root);
+int BinaryTreeComplete(BTNode* root);
+void BinaryTreeDestory(BTNode* root);
 #endif

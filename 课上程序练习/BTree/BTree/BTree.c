@@ -40,6 +40,8 @@ BTNode* BinaryTreeCreate1(char * a)
 
 }
 
+
+
 //前序遍历
 void  BinaryPreorderTraversal(BTNode* root)
 {
@@ -51,6 +53,7 @@ void  BinaryPreorderTraversal(BTNode* root)
 	}
 	
 }
+
 //后序遍历
 void  BinaryPostorderTraversal(BTNode* root)
 {
@@ -63,6 +66,7 @@ void  BinaryPostorderTraversal(BTNode* root)
 	}
 	
 }
+
 //中序遍历 
 void  BinaryInorderTraversal(BTNode* root)
 {
@@ -75,6 +79,7 @@ void  BinaryInorderTraversal(BTNode* root)
 	}
 	
 }
+
 //层序遍历
 void  BinaryLevelorderTraversal(BTNode* root){
 	Queue qu;
@@ -110,6 +115,8 @@ void  BinaryLevelorderTraversal(BTNode* root){
 	}*/
 
 }
+
+
 
 
 //前序遍历--非递归
@@ -151,94 +158,125 @@ void STBinaryInorderTraversal(BTNode* root)
 	}
 	StackDestory(&st);
 }
-
-//后序遍历--非递归
-//void BinaryTreePostOrderNonR(BTNode* root)
+//void STBinaryInorderTraversal(BTNode* root)
 //{
-//	BTNode * cur = root;
-//
 //	Stack st;
-//	int tag[32] = { 0 };                                //左孩子遍历标签
-//
-//	StackInit(&st, 100);
-//
-//	while (cur || !StackIsEmpty(&st))
+//	BTNode* cur = root;
+//	StackPush(&st, cur);
+//	while (!StackIsEmpty(&st) || cur)
 //	{
-//		for (; cur; cur = cur->_left)                //类似中序，让左孩子入栈，cur为空时，代表上一次没有
+//		for (; cur; cur = cur->_left)
 //		{
 //			StackPush(&st, cur);
-//			tag[st.size] = 0;                        //由于入栈的是左孩子，所以这里的左孩子遍历标签置0
 //		}
-//		//只要上面的for执行过哪怕一次循环，这个while后半部分条件都不能进入
-//		while (!StackIsEmpty(&st) && tag[st.size] == 1)    //左孩子还没遍历完成时，不能进入打印
-//		{
+//		while (StackIsEmpty(&st)){
 //			cur = StackFront(&st);
 //			putchar(cur->_data);
 //			StackPop(&st);
-//			cur = NULL;
-//		}
+//			if (cur->_right)
+//			{
+//				cur = cur->_right;       //在此右结点还未进栈，存在栈为空的现象
+//				break;
+//			}
+//			if (StackIsEmpty(&st))
+//			{
+//				StackDestory(&st);
+//				return;
 //
-//		if (!StackIsEmpty(&st))
-//		{
-//			tag[st.size] = 1;
-//			cur = StackFront(&st)->_right;
+//			}
 //		}
 //	}
-//	StackDestory(&st);
+//
 //}
-void STBinaryInorderTraversal(BTNode* root)
-{
+
+//后序遍历--非递归
+void STBinaryTreePostOrder(BTNode* root){
+	BTNode* cur=root;
 	Stack st;
-	BTNode* cur = root;
-	StackPush(&st, cur);
-	while (!StackIsEmpty(&st)||cur)
-	{
+	int flag[32] = { 0 };
+	StackInit(&st);
+	while (!StackIsEmpty(&st)||cur){
 		for (; cur; cur = cur->_left)
 		{
 			StackPush(&st, cur);
+			flag[st.size] = 0;
 		}
-		while (StackIsEmpty(&st)){
+		while (!StackIsEmpty(&st) && flag[st.size])
+		{
 			cur = StackFront(&st);
-			putchar(cur->_data);
+			printf("%c", cur->_data);
 			StackPop(&st);
-			if (cur->_right)
-			{
-				cur = cur->_right;       //在此右结点还未进栈，存在栈为空的现象
-				break;
-			}
-			if (StackIsEmpty(&st))
-			{
-				StackDestory(&st);
-				return;
-
-			}
+			cur = NULL;
+		}
+		if (!StackIsEmpty(&st)){
+			flag[st.size] = 1;
+			cur = StackFront(&st)->_right;
 		}
 	}
-
 }
 
 
 
 
 
-
-
-void BinaryTreeDestory(BTNode** root)
+//判断是不是二叉树：不是完全二叉树的两种情况，一种是一个节点有右无左，一种是一个节点无右有左，后面的结点不是叶子结点。
+int BinaryTreeComplete(BTNode* root)
 {
-	if (*root == NULL){
+	Queue qu;
+	QueueInit(&qu);
+	QueuePush(&qu, root);
+	BTNode* tmp;
+	int flag = 0;
+	while (!QueueIsEmpty(&qu))
+	{
+		tmp = qu.front->data;
+		QueuePop(&qu);
+		if (flag == 1 && (tmp->_left || tmp->_right))
+		{
+			return 0;
+		}
+		if (tmp->_left&&tmp->_right)
+		{
+			
+			QueuePush(&qu, tmp->_left);
+			QueuePush(&qu, tmp->_right);
+		}
+		else if (!(tmp->_left) && tmp->_right)
+		{
+			return 0;
+		}
+		else if (!tmp->_right)
+		{
+			flag = 1;
+			if (tmp->_left)
+			{
+				QueuePush(&qu, tmp->_left);
+			}
+		}
+		
+	}
+	return 1;
+
+}
+
+
+//二叉树的销毁
+void BinaryTreeDestory(BTNode* root)
+{
+	if (root == NULL){
 		return;
 	}
 
-	BinaryTreeDestory(&((*root)->_left));
-	(*root)->_left = NULL;
+	BinaryTreeDestory(root->_left);
+	root->_left = NULL;
 
-	BinaryTreeDestory(&((*root)->_right));
-	(*root)->_right = NULL;
+	BinaryTreeDestory(root->_right);
+	root->_right = NULL;
 
 
-	if ((*root)->_left == NULL && (*root)->_right == NULL)
+	if (root->_left == NULL && root->_right == NULL)
 	{
-		free(*root);
+		free(root);
 		return;
 	}
 
@@ -260,4 +298,15 @@ void BinaryTreeDestory(BTNode** root)
 //
 //	
 //
+//}
+//void BinaryTreeDestory(BTNode* root){
+//	BTNode *left, *right;
+//	if (root)
+//	{
+//		left = root->_left;
+//		right = root->_right;
+//		BinaryTreeDestory(left);
+//		BinaryTreeDestory(right);
+//		free(root);
+//	}
 //}

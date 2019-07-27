@@ -6,6 +6,7 @@
 void StackInit(Stack* pq)
 {
 	pq->top= NULL;
+	pq->size = 0;
 }
 StackNode* BuyNode(STDataType x)
 {
@@ -17,6 +18,7 @@ StackNode* BuyNode(STDataType x)
 void StackPush(Stack* pq, STDataType x)
 {
 	StackNode * cur = BuyNode(x);
+	pq->size++;
 	if (pq->top == NULL)
 	{
 		pq->top = cur;
@@ -24,6 +26,7 @@ void StackPush(Stack* pq, STDataType x)
 	}
 	cur->next = pq->top;
 	pq->top = cur;
+	
 }
 void StackPop(Stack* pq)
 {
@@ -31,6 +34,7 @@ void StackPop(Stack* pq)
 	pq->top = pq->top->next;
 	//printf("%c", tmp->data->_data);
 	free(tmp);
+	pq->size--;
 }
 
 STDataType StackFront(Stack* pq){
@@ -49,4 +53,5 @@ void StackDestory(Stack* pq)
 	{
 		StackPop(pq);
 	}
+	pq->size = 0;
 }

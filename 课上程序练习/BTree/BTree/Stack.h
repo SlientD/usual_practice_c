@@ -13,7 +13,9 @@ typedef struct StackNode{
 
 typedef struct Stack
 {
+
 	StackNode* top;    // Õ»¶¥
+	int size;
 }Stack;
 
 void StackInit(Stack* pq);

@@ -2,8 +2,8 @@
 #include "BTree.h"
 int main()
 {
-	char*  x = "ABDF##K###CE#GH##I#J###";
-	//char*  x = "ABDF####CE#GH##I#J###";
+	//char*  x = "ABDF##K###CE#GH##I#J###";
+	char*  x = "ABD##E##C##";
 	BTNode * res = BinaryTreeCreate1(x);
 	printf("前序:");
 	BinaryPreorderTraversal(res);
@@ -16,10 +16,12 @@ int main()
 	printf("\n前序非递归遍历：");
 	STBinaryPreorderTraversal(res);
 	printf("\n中序非递归遍历：");
-	
 	STBinaryInorderTraversal(res);
-	printf("\n");
-	//BinaryTreeDestory(&res);    //要对res进行更改，因而要传他的地址 
+	printf("\n后序非递归遍历：");
+	STBinaryTreePostOrder(res);
+	printf("\n判断完全二叉树：");
+	printf("%d",BinaryTreeComplete(res));
+	BinaryTreeDestory(res);    //要对res进行更改，因而要传他的地址 
 	system("pause");
 	return 0;
 }
