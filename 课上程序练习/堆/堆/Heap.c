@@ -6,14 +6,15 @@
 #include <string.h>
 #include <stdio.h>
 
-
-//void swap(HPDataType *a, HPDataType *b)
-//{
-//	
-//	*a ^= *b;
-//	*b ^= *a;
-//	*a ^= *b;
-//}
+#if 1
+void swap(HPDataType *a, HPDataType *b)  //最后一步若是自己和自己交换，把自己和自己异或，同时又修改了自己的对应地址的空间，赋值*a的同时又把*b给改掉了，所以将sort的条件改为大于一，只剩一个节点的时候不交换
+{
+	
+	*a ^= *b;
+	*b ^= *a;
+	*a ^= *b;
+}
+#else
 void swap(HPDataType *a, HPDataType *b)
 {
 	HPDataType tmp;
@@ -21,6 +22,7 @@ void swap(HPDataType *a, HPDataType *b)
 	*a = *b;
 	*b = tmp;
 }
+#endif
 void DownAdjust(Heap *hp, int n)    //n 是要调整结点所在数组中的下标
 {
 	int cur = n;
@@ -118,7 +120,7 @@ void HeapPrint(Heap *hp)
 	int tmp = 1;
 	for (i = 0; i < hp->size; i++)
 	{
-		printf("%d", hp->data[i]);
+		printf("%d ", hp->data[i]);
 		if (i == tag)
 		{
 			printf("\n");
@@ -133,7 +135,7 @@ void HeapPrint(Heap *hp)
 void HeapSort(Heap *hp)
 {
 	int tmp = hp->size;
-	while (hp->size >=1)
+	while (hp->size >1)
 	{
 		HeapPop(hp);
 	}
