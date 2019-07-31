@@ -164,6 +164,45 @@ void BTreeInOrderNR(BTreeNode* root){
 //
 //}
 
+void BTreePostOrderNR(BTreeNode* root)
+{
+	Stack st;
+	BTreeNode* cur = root;
+	int flag[32] = { 0 };
+	StackInite(&st, 3);
+	while (cur || !StackIsEmpty(&st))
+	{
+		for (; cur; cur = cur->left)
+		{
+			StackPush(&st, cur);
+			flag[st.size] = 0;
+		}
+		while (!StackIsEmpty(&st) && flag[st.size] == 1)
+		{
+			cur = StackFront(&st);
+			printf("%c", cur->data);
+			
+			StackPop(&st);
+			cur = NULL;
+		}
+		if (!StackIsEmpty(&st))
+		{
+			flag[st.size] = 1;
+			cur = StackFront(&st)->right;
+		}
+	}
+	StackDestroy(&st);
+}
+
+
+
+
+
+
+
+
+
+
 //int BTreeIsCompete(BTreeNode* root){
 //	int flag = 0;
 //	BTreeNode* cur;
@@ -236,9 +275,20 @@ int BTreeIsCompete(BTreeNode* root){
 			flag = 1;
 		}
 	}
-	QuDestroy(&qu);
 	return 1;
+	//QuDestroy(&qu);
+	
 }
 
+void BTreeDestroy(BTreeNode* root)
+{
+	if (root)
+	{
+		BTreeDestroy(root->left);
+		BTreeDestroy(root->right);
+		free(root);
+	}
+
+}
 
 

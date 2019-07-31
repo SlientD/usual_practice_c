@@ -3,7 +3,7 @@
 #define _QUEUE_H_
 #include "BTree.h"
 
-typedef BTreeNode* QueueDateType;
+typedef BTreeNode* QueueDateType; 
 typedef struct QueueNode{
 	QueueDateType data;
 	struct QueueNode* next;

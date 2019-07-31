@@ -7,6 +7,7 @@ int main(){
 	//char* x = "A#B#c##";
 	BTreeNode* bt;
 	bt = BTreeCreat(x);
+	int i;
 	//Ç°Ðò±éÀú1
 	printf("pre:");
 	BTreePreOrder(bt);
@@ -22,10 +23,14 @@ int main(){
 	BTreePreOrderNR(bt);
 	printf("\ninNR:");
 	BTreeInOrderNR(bt);
-	/*printf("\npostNR:");
-	BTreePostOrderNR(bt);*/
+	printf("\npostNR:");
+	BTreePostOrderNR(bt);
 	printf("\niscompete?");
-	printf("%d", BTreeIsCompete(bt));
+	i = BTreeIsCompete(bt);
+	printf("%d", i);
+
+	printf("\ndestroy:");
+	BTreeDestroy(bt);
 	
 	system("pause");
 	return 0;

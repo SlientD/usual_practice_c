@@ -16,7 +16,7 @@ void StackPush(Stack* st, STDataType x);
 void StackPop(Stack* st);
 STDataType StackFront(Stack* st);
 int StackIsEmpty(Stack* st);
-
+void StackDestroy(Stack* st);
 
 
 

@@ -23,9 +23,10 @@ void BTreePostOrder(BTreeNode* root);
 void BTreeLevelOrder(BTreeNode* root);
 void BTreePreOrderNR(BTreeNode* root);
 void BTreeInOrderNR(BTreeNode* root);
-//void BTreePostOrderNR(BTreeNode* root);
+void BTreePostOrderNR(BTreeNode* root);
 int BTreeIsCompete(BTreeNode* root);
 
+void BTreeDestroy(BTreeNode* root);
 
 
 #endif

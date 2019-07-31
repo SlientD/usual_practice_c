@@ -42,3 +42,9 @@ STDataType StackFront(Stack* st){
 int StackIsEmpty(Stack* st){
 	return st->size == 0;
  }
+
+void StackDestroy(Stack* st){
+	free(st->arr);
+	st->cap = 0;
+	st->size = 0;
+}
