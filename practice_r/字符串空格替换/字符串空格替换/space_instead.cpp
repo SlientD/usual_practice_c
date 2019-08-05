@@ -12,7 +12,7 @@ void CharIstead(char* s, char x, char* s1)
 
 	while (s[i])
 	{
-		if (s[i] == ' ')
+		if (s[i] == x)
 		{
 			num++;
 		}
