@@ -30,7 +30,7 @@ int main()
 #endif
 	int main()
 	{
-		SListNode head;     //head还是野指针还未赋值，就是一个存放地址的变量，他的指向有date和next
+		SListNode* head;     //head还是野指针还未赋值，就是一个存放地址的变量，他的指向有date和next
 		//SListNode* head1;
 		SListInit_r(&head);
 
@@ -42,6 +42,8 @@ int main()
 		SListPushFront_r(&head, 6);
 		SListPushFront_r(&head, 7);
 		SListPushFront_r(&head, 8);
+		SListPrint_r(head);
+		//SListReverse_r(&head);
 		SListPrint_r(head);
 		//tmp->_next = start;
 		

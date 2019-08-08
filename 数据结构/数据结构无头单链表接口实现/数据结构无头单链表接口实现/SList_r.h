@@ -13,11 +13,12 @@ typedef struct SListNode
 	struct SListNode* _next;
 }SListNode;
 
-void SListInit_r(SListNode* pphead);
+void SListInit_r(SListNode** pphead);
 SListNode* BuySListNode_r(SLTDataType x);            //做一个新的结点
-void SListPushFront_r(SListNode* pphead, SLTDataType x);
+void SListPushFront_r(SListNode** pphead, SLTDataType x);
 
-void SListPrint_r(SListNode phead);
+void SListPrint_r(SListNode* phead);
+void SListReverse_r(SListNode** pphead);
 
 
 
