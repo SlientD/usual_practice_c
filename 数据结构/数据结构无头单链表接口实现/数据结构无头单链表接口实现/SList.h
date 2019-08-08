@@ -25,6 +25,7 @@ void SListInsertAfter(SListNode* pos, SLTDataType x);
 void SListEraseAfter(SListNode* pos);
 void SListAllRemove(SListNode** pphead, SLTDataType x);
 void SListPrint(SListNode* phead);
+SLTDataType SListTailFind(SListNode* pphead, int k);      //找倒数第k个结点
 void SListReverse1(SListNode** pphead);     //逆序！！！！！！重点
 void SListReverse2(SListNode** pphead);     //逆序！！！！！！重点
 

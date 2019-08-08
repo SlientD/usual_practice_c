@@ -157,6 +157,23 @@ void SListPrint(SListNode* phead)
 	}
 	printf("NULL\n");
 }
+SLTDataType SListTailFind(SListNode* pphead, int k)      //找倒数第k个结点
+{
+	int i = 0;
+	SListNode* cur = pphead;
+	while (cur)
+	{
+		i++;
+		cur = cur->_next;
+	}
+	i = i - k + 1;
+	cur = pphead;
+	while (--i)
+	{
+		cur = cur->_next;
+	}
+	return cur->_data;
+}
 
 //链表逆序！！！！！！！！！！！！！！！！！*****************************两种代码重点呀！！！！！！！！！！！！！！！！！
 void SListReverse1(SListNode** pphead)
@@ -279,6 +296,5 @@ SListNode * detectCycle(SListNode* head)
 		}
 	}
 	return NULL;
-
 
 }
