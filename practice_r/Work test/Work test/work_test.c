@@ -47,14 +47,89 @@
 //	printf("%d", x);
 //	return;
 //}
+////12
+//typedef char STRING[255];
+////16
+//void Fun(char str[2])
+//{
+//	int m = sizeof(str);
+//	int n = strlen(str);
+//	printf("%d,%d", m, n);
+//}
 int main()
 {
+	char a[] = "abc";
+	char *s1 = "abc";
+	char *s2 = "abc";
+	a[2] = 'a';
+	printf("%s", a);
+	printf("%p,%p", s1, s2);
 
-	//9
-	char a = 1;
-	int b = 1;
-	float c = 1.0;
-	double d = 1.0;
+
+
+	////17
+	//union X
+	//{
+	//	int x;
+	//	char y[4];
+	//}a;
+	//a.x=0x11223344;
+	////printf("%x", a.y);    //y输出44   低数据位存放在低地址位是小端存储方式
+	//printf("%x", a.y[33]);
+	////16
+	//char str[] = "Hello";
+	//Fun(str);
+
+	//15
+	/*int a[5] = { 1, 2, 3, 4, 5 };
+	int *p1 = (int *)(&a + 1);
+	int *p2 = (int *)((int)a + 1);
+	int *p3 = (int *)(a + 1);
+	printf("%d,%x,%d\n", p1[-1], p2[0], p3[1]);*/
+
+	//14
+	/*unsigned long ulA = 0x11000000;
+	printf("%x\n", *(unsigned char*)&ulA);*/
+
+	//13
+	/*int s = 0, n;
+	for (n = 0; n < 4; n++)
+	{
+		switch (n)
+		{
+		default:s += 4;
+		case 1:s += 1;
+		case 2:s += 2;
+		case 3:s += 3;
+		}
+	}
+	printf("%d\n", s);*/
+
+	
+	//12
+	//STRING s;      //s为一个大小为255的字符数组
+	
+
+
+	//11
+	/*char s[] = "\\123456\123456\t";
+	printf("%d", strlen(s));*/
+
+
+	//10
+	/*char *p = "blue1";
+	char a[] = "blue1";
+	printf("%d ", strlen(a));
+	printf("%d ", strlen(p));
+	printf("%d ", sizeof(p));
+	printf("%d ", sizeof(a));*/
+
+
+	////9
+	//char a = 1;
+	//int b = 1;
+	//float c = 1.0;
+	//double d = 1.0;
 	
 
 
