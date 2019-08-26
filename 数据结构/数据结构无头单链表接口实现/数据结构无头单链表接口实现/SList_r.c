@@ -26,19 +26,19 @@ void SListPushFront_r(SListNode** pphead, SLTDataType x)   //Í·²å£¬Í·½ÚµãµÄµØÖ·Ò
 void SListPrint_r(SListNode* phead)
 {
 	
-	for (; phead._next; phead=*(phead._next))
+	for (; phead; phead=phead->_next)
 	{
 		
-		printf("%d->", phead._data);
+		printf("%d->", phead->_data);
 	}
 	printf("NULL\n");
 }
 // ÔÚposµÄºóÃæ½øÐÐ²åÈë
 
-void SListReverse_r(SListNode* phead)
+void SListReverse_r1(SListNode** phead)
 {
-	SListNode* cur = phead;
-	SListNode* cur_next = phead;
+	SListNode* cur = *phead;
+	SListNode* cur_next = *phead;
 	SListNode* cur_pre = NULL;
 
 	while (cur)
@@ -49,8 +49,44 @@ void SListReverse_r(SListNode* phead)
 		cur = cur_next;
 		
 	}
-	phead->_data = cur_pre->_data;
-	phead->_next = cur_pre->_next;
+	*phead = cur_pre;
+}
+
+void SListReverse_r2(SListNode** pphead)
+{
+	SListNode *pre = *pphead;
+	SListNode *tmp = (*pphead)->_next;
+	SListNode *next = tmp;
+	pre->_next = NULL;
+	while (tmp)
+	{
+		next = tmp->_next;
+		tmp->_next = pre;
+		pre = tmp;
+		tmp = next;
+	}
+	*pphead = pre;
+}
+
+void SListReverse_r3(SListNode** pphead)
+{
+	SListNode *head = *pphead; //¼ÇÂ¼Í·½áµã£¬ÒòÎªÒ»Ö±ÍùÇ°±ß·­£¬Òª¼ÇÂ¼²ÅÄÜ°ÑcurµÄnextÖµ¸³ÖµÎªhead£¬½«Æä·­ÔÚÇ°Ãæ£¬ÔÙ½«head¸üÐÂ
+	SListNode *pre = *pphead;  //¼ÇÂ¼Ò»¿ªÊ¼µÄÍ·½áµãÎ»ÖÃ£¬Ö±µ½ËûÖµÎª¿Õ
+	SListNode *cur = (*pphead)->_next;
+	SListNode *next = cur;
+	while (cur)
+	{
+		next = next->_next;
+		cur->_next = head;
+		pre->_next = next;
+		head = cur;
+		cur = next;
+
+	}
+	*pphead = head;
+
+
+
 }
 
 

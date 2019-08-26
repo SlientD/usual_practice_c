@@ -43,7 +43,7 @@ int main()
 		SListPushFront_r(&head, 7);
 		SListPushFront_r(&head, 8);
 		SListPrint_r(head);
-		//SListReverse_r(&head);
+		SListReverse_r3(&head);
 		SListPrint_r(head);
 		//tmp->_next = start;
 		

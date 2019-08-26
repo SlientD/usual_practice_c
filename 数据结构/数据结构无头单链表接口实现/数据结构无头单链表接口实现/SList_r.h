@@ -18,7 +18,7 @@ SListNode* BuySListNode_r(SLTDataType x);            //做一个新的结点
 void SListPushFront_r(SListNode** pphead, SLTDataType x);
 
 void SListPrint_r(SListNode* phead);
-void SListReverse_r(SListNode** pphead);
+void SListReverse_r3(SListNode** pphead);
 
 
 
