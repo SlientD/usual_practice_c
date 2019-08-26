@@ -58,12 +58,53 @@
 //}
 int main()
 {
-	char a[] = "abc";
+	char str[8] = "good!";
+	char str1[2] = {'g','o'};
+	//25
+	/*int i, x, y;
+	i = x = y = 0;
+	do{
+		++i;
+		if (i % 2)
+		{
+			x += i,
+				i++;
+		}
+		y += i++;
+	} while (i <= 7);
+		printf("%d %d %d", i, x, y);*/
+	
+	//24
+	//printf("%f", (double)(10 / 4 ));
+	//23
+	/*char ch = -1;
+	printf("%d", ch);*/
+
+	//22
+	/*int i = 10;
+	long long t = sizeof(i++);
+	printf("%d", i);*/
+	//21
+	/*char *c = "abce";
+	c += 2;
+	printf("%lu\n", c);*/
+	//20
+	/*unsigned short x = 0;
+	x--;
+	printf("%d", x);*/
+
+	//19
+	/*int x = 1, y = 012;
+	printf("%d", y*x++);*/
+
+
+	//18
+	/*char a[] = "abc";
 	char *s1 = "abc";
 	char *s2 = "abc";
 	a[2] = 'a';
 	printf("%s", a);
-	printf("%p,%p", s1, s2);
+	printf("%p,%p", s1, s2);*/
 
 
 
