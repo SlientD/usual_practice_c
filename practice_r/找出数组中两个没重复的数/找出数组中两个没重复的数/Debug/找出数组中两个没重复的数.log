@@ -1,0 +1,13 @@
+﻿生成启动时间为 2019/9/3 21:01:36。
+     1>项目“D:\git\git\usual_practice_c\practice_r\找出数组中两个没重复的数\找出数组中两个没重复的数\找出数组中两个没重复的数.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\git\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Find_Two_Single_Number.c
+         Find_Two_Single_Number.c
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\git\git\usual_practice_c\practice_r\找出数组中两个没重复的数\Debug\找出数组中两个没重复的数.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\git\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\git\git\usual_practice_c\practice_r\找出数组中两个没重复的数\Debug\找出数组中两个没重复的数.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\git\git\usual_practice_c\practice_r\找出数组中两个没重复的数\Debug\找出数组中两个没重复的数.lib" /MACHINE:X86 Debug\Find_Two_Single_Number.obj
+         找出数组中两个没重复的数.vcxproj -> D:\git\git\usual_practice_c\practice_r\找出数组中两个没重复的数\Debug\找出数组中两个没重复的数.exe
+     1>已完成生成项目“D:\git\git\usual_practice_c\practice_r\找出数组中两个没重复的数\找出数组中两个没重复的数\找出数组中两个没重复的数.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.70
