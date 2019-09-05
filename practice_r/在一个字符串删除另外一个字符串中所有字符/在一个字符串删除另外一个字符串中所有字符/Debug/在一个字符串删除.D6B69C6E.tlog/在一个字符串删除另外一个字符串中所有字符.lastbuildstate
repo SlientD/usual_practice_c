@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+Debug|Win32|D:\git\git\usual_practice_c\practice_r\在一个字符串删除另外一个字符串中所有字符\|
