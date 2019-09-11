@@ -1,4 +1,4 @@
-﻿生成启动时间为 2019/8/25 17:43:13。
+﻿生成启动时间为 2019/9/11 16:36:02。
      1>项目“D:\git\git\usual_practice_c\practice_r\Work test\Work test\Work test.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\git\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt work_test.c
@@ -10,4 +10,4 @@
 
 生成成功。
 
-已用时间 00:00:00.56
+已用时间 00:00:01.00

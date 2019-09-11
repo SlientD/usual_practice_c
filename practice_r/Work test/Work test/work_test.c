@@ -56,10 +56,24 @@
 //	int n = strlen(str);
 //	printf("%d,%d", m, n);
 //}
+//27
+//int f(int x, int y)
+//{
+//	return (x&y) + ((x^y) >> 1);
+//}
 int main()
 {
-	char str[8] = "good!";
-	char str1[2] = {'g','o'};
+	int arr[] = { 6, 7, 8, 9, 10 };
+	int *ptr = arr;
+	*(ptr++) += 123;
+	printf("%d %d", *ptr, *(ptr++));
+	//27
+	/*int result = f(2, 4);
+	printf("%d", result);*/
+
+	//26
+	/*char str[8] = "good!";
+	char str1[2] = {'g','o'};*/
 	//25
 	/*int i, x, y;
 	i = x = y = 0;
