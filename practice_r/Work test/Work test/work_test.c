@@ -63,10 +63,17 @@
 //}
 int main()
 {
-	int arr[] = { 6, 7, 8, 9, 10 };
+	char a = -128;
+	printf("%u\n", a);
+	//29
+	/*int x = 1;
+	unsigned char c = 0xA2;
+	x = c;*/
+	//28
+	/*int arr[] = { 6, 7, 8, 9, 10 };
 	int *ptr = arr;
 	*(ptr++) += 123;
-	printf("%d %d", *ptr, *(ptr++));
+	printf("%d %d", *ptr, *(ptr++));*/
 	//27
 	/*int result = f(2, 4);
 	printf("%d", result);*/
